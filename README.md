@@ -41,20 +41,20 @@ Default settings
 }
 ```
 
-To add css support change to this:
+Example settings updates:
 
 ```settings.json
 {
     "scssLint.showHighlights": false,
-    "scssLint.runOnTextChange": false,
-    "scssLint.errorBackgroundColor": "rgba(200, 0, 0, .8)",
-    "scssLint.warningBackgroundColor": "rgba(200, 120, 0, .8)",
+    "scssLint.runOnTextChange": true,
+    "scssLint.errorBackgroundColor": "rgba(200, 50, 50, .8)",
+    "scssLint.warningBackgroundColor": "rgba(200, 100, 20, .8)",
     "scssLint.languages": [
         "css",
         "scss"
     ],
-    "scssLint.statusBarText": "`$(telescope) scss-lint  ${errors.length} $(x)  ${warnings.length} $(alert)`",
-    "scssLint.configDir": ""
+    "scssLint.statusBarText": "`$(telescope) scss-lint ${errors.length} $(x)`",
+    "scssLint.configDir": "/Users/adam/"
 }
 ```
 
@@ -72,6 +72,6 @@ Known issues are tracked on github. Feel free to post them there or resolve some
 
 We must thank [sass](http://sass-lang.com), [scss-lint](https://github.com/brigade/scss-lint), and [vscode-wordcount](https://github.com/Microsoft/vscode-wordcount) for the help they provided in making this extension.
 
-Also, thank you to [@youdame](https://github.com/yoodame) for his PR making this extension work even when the .scss-lint.yml isn't in the root directory of the project and to [@donni106](https://github.com/donni106) and [@DrChills](https://github.com/DrChills) for their help identifying and finding solutions to issues with the extension.
+Also, thank you to everyone who has submitted issues and helped to improve the project. I'll try to mention you in the [CHANGELOG](CHANGELOG.md), but if I miss you, please let me know.
 
 **Enjoy!**
